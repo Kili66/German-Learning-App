@@ -1,11 +1,17 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
+try:
 import plotly.express as px
 import plotly.graph_objects as go
+except ModuleNotFoundError as e:
+st.error("Plotly is not installed. Please install it by adding it to requirements.txt")
+st.stop()
+
+import pandas as pd
+import numpy as np
 from datetime import datetime, timedelta
 import random
 import time
+
 
 # Set page configuration
 st.set_page_config(
