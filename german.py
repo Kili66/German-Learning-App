@@ -1,10 +1,10 @@
 import streamlit as st
 try:
-import plotly.express as px
-import plotly.graph_objects as go
-except ModuleNotFoundError as e:
-st.error("Plotly is not installed. Please install it by adding it to requirements.txt")
-st.stop()
+    import plotly.express as px
+    import plotly.graph_objects as go
+    except ModuleNotFoundError as e:
+    st.error("Plotly is not installed. Please install it by adding it to requirements.txt")
+    st.stop()
 
 import pandas as pd
 import numpy as np
